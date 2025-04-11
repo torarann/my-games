@@ -1,0 +1,120 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  transition: background 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #00c6ff;
+  color: white;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #007acc;
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#score, #timer {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.countdown {
+  font-size: 3em;
+  color: red;
+  animation: fadeInOut 1s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  animation: popIn 0.5s ease-out forwards;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+@keyframes popIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#rankText {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back-home {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ffe8a3;
+  color: #333;
+  border: 2px solid #d4b15c;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #d4b15c;
+  transition: all 0.2s;
+}
+
+.back-home:hover {
+  background-color: #fff1c1;
+  box-shadow: 2px 2px 0 #b39246;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>タイミングゲーム</title>
+  <link rel="stylesheet" href="timing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>⏱ タイミングゲーム</h1>
+    <div class="bar-container">
+      <div class="bar"></div>
+      <div class="target-line"></div>
+    </div>
+    <button id="stopBtn">ストップ！</button>
+  </div>
+
+  <div class="modal" id="resultModal">
+    <div class="modal-content">
+      <h2>結果発表！</h2>
+      <p id="scoreText">スコア: 0</p>
+      <button onclick="location.reload()">もう一回！</button>
+    </div>
+  </div>
+
+  <button class="back-home" onclick="location.href='home.html'">🏠 ホームに戻る</button>
+
+  <script src="timing.js"></script>
+</body>
+</html>

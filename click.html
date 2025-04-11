@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>クリックバトルDX</title>
+  <link rel="stylesheet" href="click.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>クリックバトルDX</h1>
+    <p id="countdown" class="countdown"></p>
+    <p id="timer">残り時間: 10秒</p>
+    <button id="clickButton" disabled>クリック！</button>
+    <p id="score">スコア: 0</p>
+    <button id="startButton">スタート</button>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-content">
+      <span id="resultText"></span>
+      <p id="rankText"></p>
+      <button id="restartButton">もう一度プレイ</button>
+    </div>
+  </div>
+
+  <button class="back-home" onclick="location.href='home.html'">🏠 ホームに戻る</button>
+
+  <script src="click.js"></script>
+</body>
+</html>

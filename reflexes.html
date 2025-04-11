@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>反射神経チャレンジ</title>
+  <link rel="stylesheet" href="reflexes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>反射神経チャレンジ</h1>
+    <div id="targetArea">ここが緑になったらクリック！</div>
+    <p id="message">スタートを押してね</p>
+    <p id="score">スコア: 0</p>
+    <button id="startButton">スタート</button>
+  </div>
+
+  <div id="resultModal" class="modal">
+    <div class="modal-content">
+      <span id="resultText"></span>
+      <p id="rankText"></p>
+      <button id="restartButton">もう一度プレイ</button>
+    </div>
+  </div>
+
+  <button class="back-home" onclick="location.href='home.html'">🏠 ホームに戻る</button>
+
+  <script src="reflexes.js"></script>
+</body>
+</html>
